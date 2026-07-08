@@ -3,7 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Manraj Singh | Engineering ePortfolio</title>
+    <title>Manraj Singh | Software Engineer</title>
+    <meta
+      name="description"
+      content="Manraj Singh is a Sydney-based software engineer who builds full-stack applications and trains machine learning models. Software Engineering (Honours) student at UTS."
+    />
+    <meta name="theme-color" content="#234c63" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,10 +25,10 @@
       <nav id="desktop-nav" class="nav">
         <div class="logo">Manraj Singh</div>
         <ul class="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#resume">Resume</a></li>
-          <li><a href="#reflection">Reflection</a></li>
-          <li><a href="#cover-letter">Cover Letter</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -42,12 +47,10 @@
             <span></span>
           </button>
           <ul class="menu-links">
-            <li><a href="#home" onclick="toggleMenu()">Home</a></li>
-            <li><a href="#resume" onclick="toggleMenu()">Resume</a></li>
-            <li><a href="#reflection" onclick="toggleMenu()">Reflection</a></li>
-            <li>
-              <a href="#cover-letter" onclick="toggleMenu()">Cover Letter</a>
-            </li>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
             <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
           </ul>
         </div>
@@ -63,42 +66,35 @@
             class="hero__image"
           />
         </div>
-        <div class="hero__content">
-          <p class="eyebrow">Engineering ePortfolio</p>
+        <div class="hero__content" id="about">
+          <p class="eyebrow">Software Engineer · Sydney, Australia</p>
           <h1>Manraj Singh</h1>
-          <p class="hero-subtitle">Software Engineering Student</p>
-          <p class="lead">
-            I am currently in my third year of studying Software Engineering at
-            the University of Technology Sydney with a strong interest in
-            software development, data analysis and machine learning. I
-            developed this interest because I enjoy solving real problems using
-            technology and building applications that people actually want to
-            use.
+          <p class="hero-subtitle">
+            Full-stack development &amp; machine learning
           </p>
           <p class="lead">
-            Through my academic journey, projects, work and internships, I have
-            developed skills in Python, SQL and C++, along with tools such as
-            Git, cloud platforms like Microsoft Azure and DigitalOcean, and data
-            analysis tools like KNIME and Power BI. I am especially interested
-            in backend development, machine learning and building scalable
-            applications.
+            I am a Software Engineering (Honours) student at the University of
+            Technology Sydney, graduating June 2027 with a Data Analytics
+            sub-major and a Distinction average. I build full-stack
+            applications with Next.js, TypeScript and FastAPI, and train machine
+            learning models with TensorFlow and Keras.
           </p>
           <p class="lead">
-            I am hardworking, curious and always looking to improve. My goal is
-            to continue growing as a software engineer, especially in backend
-            systems and machine learning, and to contribute to meaningful and
-            impactful technology projects.
+            My industry experience spans software development, IT systems
+            analysis and API documentation. I care most about backend systems,
+            clean data pipelines and shipping products people actually use.
+            Available for 2026 and 2027 internship and graduate roles.
           </p>
           <div class="hero__actions">
             <a
               class="btn btn--primary"
-              href="./assets/Manraj%20Singh_UTS_Software%20Engineering.pdf"
+              href="./assets/Manraj_Singh_Resume.pdf"
               target="_blank"
               rel="noopener"
-              >View Resume PDF</a
+              >Download Resume</a
             >
-            <a class="btn btn--secondary" href="#resume">View Resume</a>
-            <a class="btn btn--secondary" href="#contact">Contact Me</a>
+            <a class="btn btn--secondary" href="#projects">View Projects</a>
+            <a class="btn btn--secondary" href="#contact">Get in Touch</a>
           </div>
           <div class="social-links" aria-label="Social links">
             <a
@@ -122,514 +118,343 @@
               GitHub
             </a>
           </div>
+          <div class="hero__facts">
+            <div class="fact-card">
+              <h3>WAM 81.5</h3>
+              <p>Distinction average, 11 High Distinctions</p>
+            </div>
+            <div class="fact-card">
+              <h3>1,600+</h3>
+              <p>Users on my Discord bot across nearly 900 servers</p>
+            </div>
+            <div class="fact-card">
+              <h3>Jun 2027</h3>
+              <p>Graduating, B.E. (Honours) Software</p>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section class="section">
+      <section id="skills" class="section">
         <div class="section-header">
-          <p class="eyebrow">Section 1</p>
-          <div class="section-header__top">
-            <h2>Landing Page</h2>
-            <a
-              class="btn btn--secondary btn--small section-download"
-              href="./assets/Manraj%20Singh_Landing%20Page.docx"
-              download
-              >Download Landing Page</a
-            >
-          </div>
+          <p class="eyebrow">Toolbox</p>
+          <h2>Skills</h2>
         </div>
         <div class="panel-grid">
           <article class="panel">
-            <p class="meta">Professional Snapshot</p>
-            <h3>Current stage</h3>
-            <p class="answer">
-              I am a third-year Software Engineering (Honours) student at UTS
-              with a distinction average, currently working in IT support and
-              systems analysis while building toward graduate software
-              engineering roles.
-            </p>
+            <p class="meta">Languages</p>
+            <div class="chips">
+              <span class="chip">Python</span>
+              <span class="chip">TypeScript</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">SQL</span>
+              <span class="chip">C++</span>
+              <span class="chip">Java</span>
+              <span class="chip">Kotlin</span>
+            </div>
           </article>
 
           <article class="panel">
-            <p class="meta">Career Direction</p>
-            <h3>What I am building toward</h3>
-            <p class="answer">
-              My focus is backend software, data analytics and machine learning.
-              I am particularly interested in roles where software engineering
-              and real operational impact meet.
-            </p>
-          </article>
-
-          <article class="panel full-width">
-            <p class="meta">Highlights</p>
-            <h3>At a glance</h3>
-            <ul class="list">
-              <li>
-                <strong>Current role:</strong> Junior IT Support and Systems
-                Analyst at Waco Kwikform Group.
-              </li>
-              <li>
-                <strong>Prior internship:</strong> Software Development Intern
-                at GlobalMedics.ai, delivering a ReactJS text editor and an AI
-                chatbot using Microsoft Azure services.
-              </li>
-              <li>
-                <strong>Technical project work:</strong> CPR Kids analytics
-                backend, churn prediction model (TensorFlow/Keras), and a
-                company-wide change management system in Power
-                Automate/SharePoint.
-              </li>
-              <li>
-                <strong>Independent project:</strong> MiniGames Discord bot in
-                Python, used in nearly 800 servers with over 1,000 registered
-                users.
-              </li>
-            </ul>
-          </article>
-        </div>
-      </section>
-
-      <section id="resume" class="section">
-        <div class="section-header">
-          <p class="eyebrow">Section 2</p>
-          <div class="section-header__top">
-            <h2>Resume</h2>
-            <a
-              class="btn btn--secondary btn--small section-download"
-              href="./assets/Manraj%20Singh_UTS_Software%20Engineering.pdf"
-              target="_blank"
-              rel="noopener"
-              >Download Resume PDF</a
-            >
-          </div>
-        </div>
-
-        <div class="panel-grid">
-          <article class="panel full-width">
-            <p class="meta">Contact</p>
-            <h3>Manraj Singh</h3>
-            <p class="answer">
-              0488 532 852 | manraj.singh1907@gmail.com |
-              https://www.linkedin.com/in/manrajsingh19/
-            </p>
-          </article>
-
-          <article class="panel full-width">
-            <p class="meta">Key Skills</p>
-            <h3>Technical and professional skills</h3>
-            <ul class="list">
-              <li>
-                <strong>Languages:</strong> Python, SQL, C++, Java, JavaScript
-              </li>
-              <li>
-                <strong>Tools &amp; Platforms:</strong> Git/GitHub, Visual
-                Studio Code, Microsoft Azure, DigitalOcean, Power Automate,
-                Microsoft Office Suite
-              </li>
-              <li>
-                <strong>Data &amp; Machine Learning:</strong> Tableau, Power BI,
-                KNIME Analytics, Microsoft Excel, IBM Cognos Analytics, pandas,
-                NumPy, Matplotlib, Scikit-learn, TensorFlow
-              </li>
-              <li>
-                <strong>Other Skills:</strong> AI-assisted coding, Teamwork,
-                Communication, Critical Thinking, Problem Solving, Adaptability
-              </li>
-            </ul>
-          </article>
-
-          <article class="panel full-width">
-            <p class="meta">IT Experience</p>
-            <h3>Waco Kwikform Group | April 2025 - Present</h3>
-            <p class="answer">
-              <strong>Junior IT Support and Systems Analyst</strong> | October
-              2025 - Present
-            </p>
-            <ul class="list">
-              <li>
-                Provide Level 1 IT support across business systems and
-                applications, manage tickets within SLA timeframes and support
-                user onboarding, off-boarding and device provisioning.
-              </li>
-              <li>
-                Manage user access, track IT assets, keep documentation up to
-                date and handle regular system maintenance.
-              </li>
-              <li>
-                Support business process improvements through SQL tasks,
-                reporting and dashboard support in IBM Cognos Analytics,
-                gathering user requirements and testing new systems or updates
-                before implementation.
-              </li>
-            </ul>
-            <br />
-            <p class="answer">
-              <strong>IT Business Analyst Intern</strong> | April 2025 -
-              September 2025
-            </p>
-            <ul class="list">
-              <li>
-                Collaborated with the IT team to analyse business data and
-                improve workflows across ERP and project management systems.
-              </li>
-              <li>
-                Facilitated implementation of process improvements on 3 major
-                projects including data analysis, system testing and
-                implementation, and workflow development.
-              </li>
-              <li>
-                Engaged with over 10 stakeholders across departments to gather
-                insights for business process optimisation initiatives.
-              </li>
-            </ul>
-          </article>
-
-          <article class="panel full-width">
-            <p class="meta">IT Experience</p>
-            <h3>GlobalMedics.ai | June 2024 - September 2024</h3>
-            <p class="answer"><strong>Software Development Intern</strong></p>
-            <ul class="list">
-              <li>
-                Partnered with experienced software developers across 2
-                projects.
-              </li>
-              <li>
-                Designed an interactive text editor in ReactJS for the product.
-              </li>
-              <li>
-                Built an AI chatbot that customers could talk to using Microsoft
-                Azure services.
-              </li>
-            </ul>
-          </article>
-
-          <article class="panel full-width">
-            <p class="meta">Projects</p>
-            <h3>Technical project work</h3>
-            <ul class="list">
-              <li>
-                <strong>Data Analytics Application</strong> | August 2025 -
-                November 2025: Collaborated in a team of 5 software engineering
-                students to develop the backend in Python for a data analytics
-                and visualisation application built for CPR Kids. The
-                application provides information on social media performance,
-                advertisement metrics and bookings.
-              </li>
-              <li>
-                <strong>Customer Churn Prediction Model</strong> | September
-                2025 - November 2025: Built an Artificial Neural Network using
-                TensorFlow 2.0 and Keras for churn prediction based on feature
-                engineering of 90-day anonymised telco usage data, including
-                preprocessing, model training and evaluation.
-              </li>
-              <li>
-                <strong>Change Management System</strong> | July 2025 - August
-                2025: Developed a company-wide change management system using
-                Power Automate and SharePoint for Waco Kwikform, supporting
-                dynamic stakeholder approvals. Used by 6 departments to track,
-                review and approve or reject operational changes.
-              </li>
-              <li>
-                <strong>MiniGames Discord Bot</strong> | September 2024 -
-                Present: Created a Discord bot in Python (discord.py), used in
-                nearly 800 servers with more than 1000 registered users to play
-                minigames including Tic-Tac-Toe, Connect4 and Flag Guesser.
-              </li>
-            </ul>
+            <p class="meta">Frameworks &amp; Libraries</p>
+            <div class="chips">
+              <span class="chip">Next.js</span>
+              <span class="chip">React</span>
+              <span class="chip">Node.js</span>
+              <span class="chip">FastAPI</span>
+              <span class="chip">Jetpack Compose</span>
+              <span class="chip">TensorFlow</span>
+              <span class="chip">Keras</span>
+            </div>
           </article>
 
           <article class="panel">
-            <p class="meta">Education</p>
-            <h3>Bachelor of Engineering - Software (Honours)</h3>
-            <p class="answer">
-              University of Technology Sydney (UTS) | August 2023 - June 2027
-            </p>
-            <ul class="list">
-              <li><strong>Academic standing:</strong> Distinction average</li>
-              <li>
-                9 High Distinctions. Relevant subjects include Data Structures
-                and Algorithms (95%), Programming 1 (92%), Database Fundamentals
-                (87%), Software Architecture (90%), Network Fundamentals (92%),
-                Software Development Studio (87%).
-              </li>
-              <li>
-                Sub-major in Data Analytics: Introduction to Data Analytics
-                (87%), Design, Data, and Decisions (84%), Machine Learning
-                (86%).
-              </li>
-            </ul>
+            <p class="meta">Data &amp; Machine Learning</p>
+            <div class="chips">
+              <span class="chip">pandas</span>
+              <span class="chip">NumPy</span>
+              <span class="chip">Scikit-learn</span>
+              <span class="chip">PostgreSQL</span>
+              <span class="chip">MongoDB</span>
+              <span class="chip">Prisma</span>
+              <span class="chip">Supabase</span>
+              <span class="chip">IBM Cognos</span>
+              <span class="chip">Tableau</span>
+              <span class="chip">Power BI</span>
+              <span class="chip">KNIME</span>
+            </div>
           </article>
 
           <article class="panel">
-            <p class="meta">Certifications</p>
-            <h3>Deloitte Australia Data Analytics Simulation</h3>
-            <p class="answer">Forage | June 2025</p>
-            <ul class="list">
-              <li>
-                Completed a Deloitte job simulation involving data analysis and
-                forensic technology, using Tableau and MS Excel to investigate
-                data patterns and outliers.
-              </li>
-              <li>
-                Created a data dashboard in Tableau, analysed unstructured data,
-                and leveraged Excel to classify data and draw business
-                conclusions.
-              </li>
-            </ul>
-          </article>
-
-          <article class="panel full-width">
-            <p class="meta">Referees</p>
-            <p class="answer">Provided upon request.</p>
-            <div class="resume-footer">
-              <a
-                class="btn btn--primary"
-                href="./assets/Manraj%20Singh_UTS_Software%20Engineering.pdf"
-                target="_blank"
-                rel="noopener"
-                >Download Resume PDF</a
-              >
-              <a class="btn btn--secondary" href="#cover-letter"
-                >Go to Cover Letter</a
-              >
+            <p class="meta">Tools &amp; Platforms</p>
+            <div class="chips">
+              <span class="chip">Git / GitHub</span>
+              <span class="chip">REST APIs</span>
+              <span class="chip">Microsoft Azure</span>
+              <span class="chip">Vercel</span>
+              <span class="chip">DigitalOcean</span>
+              <span class="chip">Power Automate</span>
+              <span class="chip">SharePoint</span>
+              <span class="chip">VS Code</span>
             </div>
           </article>
         </div>
       </section>
 
-      <section id="reflection" class="section">
+      <section id="experience" class="section">
         <div class="section-header">
-          <p class="eyebrow">Section 3</p>
-          <div class="section-header__top">
-            <h2>Internship Reflection</h2>
-            <a
-              class="btn btn--secondary btn--small section-download"
-              href="./assets/Internship%20Reflection_Manraj%20Singh.docx"
-              download
-              >Download Reflection</a
-            >
-          </div>
+          <p class="eyebrow">Where I've worked</p>
+          <h2>Experience</h2>
         </div>
-
-        <div class="reflection-grid">
-          <article class="card">
-            <p class="star-label">
-              What were your expectations about your internship before you
-              joined?
-            </p>
-            <p class="answer">
-              Since the internship was unpaid, I expected to learn and shadow
-              other employees a lot more than getting any actual tasks assigned
-              such as resolving tickets or managing users. I also expected to
-              gain exposure to the corporate culture.
-            </p>
+        <div class="stack">
+          <article class="panel entry">
+            <div class="entry-head">
+              <div>
+                <h3>Software Engineer Intern</h3>
+                <p class="entry-company">
+                  Jio Platform Limited, Enterprise Self-Care Team
+                </p>
+              </div>
+              <span class="entry-date">Jun 2026 - Jul 2026</span>
+            </div>
+            <ul class="list">
+              <li>
+                Documented 5 end-to-end API flows on the JioBusiness portal for
+                the Agent Development Lifecycle, down to their endpoints,
+                request/response schemas, journey stages and error paths.
+              </li>
+              <li>
+                Reverse engineered these flows from HAR captures to extract
+                schemas grouped by status code with PII redacted, and flagged
+                backend defects the UI hid, such as 400 errors returned inside
+                HTTP 200 responses.
+              </li>
+            </ul>
           </article>
 
-          <article class="card">
-            <p class="star-label">
-              What was the reality? How was it different from your expectations?
-            </p>
-            <p class="answer">
-              Initially, the reality was similar to what I expected, but later
-              on I was given real responsibilities, such as building a change
-              management system for the company. I learnt a lot about IT and
-              data analytics and how they affect day-to-day operations in a
-              real-world setting.
-            </p>
+          <article class="panel entry">
+            <div class="entry-head">
+              <div>
+                <h3>Junior IT Support and Systems Analyst</h3>
+                <p class="entry-company">Waco Kwikform Group</p>
+              </div>
+              <span class="entry-date">Oct 2025 - Apr 2026</span>
+            </div>
+            <ul class="list">
+              <li>
+                Provided Level 1 support across business systems: resolved
+                tickets within SLA and ran user onboarding, offboarding and
+                device provisioning.
+              </li>
+              <li>
+                Carried process improvements through SQL work, reporting and IBM
+                Cognos dashboards, and managed user access, asset tracking and
+                documentation.
+              </li>
+            </ul>
           </article>
 
-          <article class="card">
-            <p class="star-label">
-              What lessons were the most important from your internship, and why
-              were they important?
-            </p>
-            <p class="answer">
-              I learnt that regular communication, feedback and mutual respect
-              in a workplace are essential. Communication keeps your teammates
-              updated on your progress or when you are facing difficulties.
-              Regular feedback helps individuals and teams improve their
-              performance. Mutual respect is essential because good ideas can
-              come from anyone. Even as an intern, I felt that my opinions were
-              valued by everyone, which showed me how important an open and
-              supportive culture is.
-            </p>
+          <article class="panel entry">
+            <div class="entry-head">
+              <div>
+                <h3>IT Business Analyst Intern</h3>
+                <p class="entry-company">Waco Kwikform Group</p>
+              </div>
+              <span class="entry-date">Apr 2025 - Sep 2025</span>
+            </div>
+            <ul class="list">
+              <li>
+                Delivered process improvements on three major projects across
+                ERP and project-management systems. The work covered data
+                analysis, system testing and workflow development.
+              </li>
+              <li>
+                Gathered requirements from more than 10 stakeholders across
+                departments to shape process-optimisation work.
+              </li>
+            </ul>
           </article>
 
-          <article class="card">
-            <p class="star-label">
-              After your workplace experience, what would you say your value
-              proposition to an employer is? How can you demonstrate this?
-            </p>
-            <p class="answer">
-              I can offer strong technical skills combined with a practical
-              understanding of how technology supports business operations. I am
-              comfortable working with both technical systems and non-technical
-              stakeholders.
-            </p>
-          </article>
-
-          <article class="card full-width">
-            <p class="star-label">
-              How did your internship influence the type of role in which you
-              are interested?
-            </p>
-            <p class="answer">
-              While my main interest is still software engineering and
-              development, this internship made me realise that I also enjoy
-              working with IT systems, infrastructure and hardware. I am now
-              more open to roles that combine software development with
-              practical IT and business support.
-            </p>
+          <article class="panel entry">
+            <div class="entry-head">
+              <div>
+                <h3>Software Development Intern</h3>
+                <p class="entry-company">GlobalMedics.ai</p>
+              </div>
+              <span class="entry-date">Jun 2024 - Sep 2024</span>
+            </div>
+            <ul class="list">
+              <li>
+                Built an interactive React text editor and a customer-facing AI
+                chatbot on Microsoft Azure, alongside senior developers across
+                two projects.
+              </li>
+            </ul>
           </article>
         </div>
       </section>
 
-      <section id="cover-letter" class="section">
+      <section id="projects" class="section">
         <div class="section-header">
-          <p class="eyebrow">Section 4</p>
-          <div class="section-header__top">
-            <h2>Cover Letter</h2>
-            <a
-              class="btn btn--secondary btn--small section-download"
-              href="./assets/Task%202a_Manraj%20Singh_Cover%20Letter_Industrus%20Engineering.docx"
-              download
-              >Download Cover Letter</a
-            >
-          </div>
+          <p class="eyebrow">Selected work</p>
+          <h2>Projects</h2>
         </div>
+        <div class="panel-grid">
+          <article class="panel">
+            <div class="entry-head">
+              <h3>Nooklet</h3>
+              <span class="entry-date">May 2026 - Present</span>
+            </div>
+            <p class="answer">
+              A full-stack social platform to log and review media across
+              several categories, with cross-category recommendations and
+              external content providers unified behind a single, deduplicated
+              search.
+            </p>
+            <div class="chips">
+              <span class="chip">Next.js</span>
+              <span class="chip">TypeScript</span>
+              <span class="chip">Tailwind CSS</span>
+              <span class="chip">Prisma</span>
+              <span class="chip">Supabase</span>
+              <span class="chip">PostgreSQL</span>
+            </div>
+          </article>
 
-        <article class="card letter">
-          <div>
-            <p>Manraj Singh</p>
-            <p>manraj.singh1907@gmail.com</p>
-            <p>0488 532 852</p>
-            <br />
-            <p>15 March 2026</p>
-            <br />
-            <p>Hiring Manager</p>
-            <p>Industrus Engineering</p>
-            <br />
-            <p>Re: Application for Graduate Engineer Program</p>
-            <br />
-            <p>Dear Hiring Manager,</p>
-            <p>
-              I am writing to apply for the Graduate Engineer position at
-              Industrus Engineering. As a third-year Bachelor of Software
-              Engineering (Honours) student at the University of Technology,
-              Sydney (UTS) with a distinction average, I have developed a strong
-              technical foundation through my academic journey and internship
-              experience in the IT industry.
+          <article class="panel">
+            <div class="entry-head">
+              <h3>MiniGames Discord Bot</h3>
+              <span class="entry-date">Sep 2024 - Present</span>
+            </div>
+            <p class="answer">
+              A Discord bot used in close to 900 servers by over 1,600
+              registered users, running games including Tic-Tac-Toe, Connect 4,
+              Flag Guesser and more.
             </p>
-            <br />
-            <p>
-              A commitment to ethical conduct and the highest standards of
-              professional accountability (3.1) In my current job as a Junior IT
-              Support and Systems Analyst at Waco Kwikform, I am responsible for
-              managing business systems that contain sensitive company
-              information. My main task involves managing user access,
-              troubleshooting any issues that users may have with various
-              applications and maintaining documentation for IT assets and
-              procedures. I ensure that system security is maintained by
-              strictly following company protocols and verifying that only
-              authorised staff are granted specific permissions. These
-              consistent actions have helped maintain the integrity of our
-              internal processes and ensured that our systems meet professional
-              security standards.
+            <div class="chips">
+              <span class="chip">Python</span>
+              <span class="chip">discord.py</span>
+              <span class="chip">DigitalOcean</span>
+            </div>
+          </article>
+
+          <article class="panel">
+            <div class="entry-head">
+              <h3>Android Hand Gesture Recognition</h3>
+              <span class="entry-date">Mar 2026 - Jun 2026</span>
+            </div>
+            <p class="answer">
+              A real-time gesture-recognition Android app backed by two FastAPI
+              models: a MobileNetV2 transfer-learning model and a CustomCNN built
+              from scratch, both trained on HaGRID and A/B tested in-app. Built
+              by a team of three.
             </p>
-            <br />
-            <p>
-              Demonstrated ability to effectively communicate both with other
-              engineers and with stakeholders from different fields (3.2) While
-              working as an IT Business Analyst Intern at Waco Kwikform, I
-              identified the need for better alignment between technical system
-              updates and the practical needs of various departments. I gathered
-              requirements from over ten stakeholders and translated their needs
-              into technical improvements for an electronic forms management
-              system. I communicated regularly with both technical staff and
-              non-technical users to explain system changes and gather feedback.
-              This helped ensure that the solutions developed were practical and
-              aligned with business needs.
+            <div class="chips">
+              <span class="chip">Kotlin</span>
+              <span class="chip">Jetpack Compose</span>
+              <span class="chip">CameraX</span>
+              <span class="chip">FastAPI</span>
+              <span class="chip">MobileNetV2</span>
+              <span class="chip">CNN</span>
+            </div>
+          </article>
+
+          <article class="panel">
+            <div class="entry-head">
+              <h3>Data Analytics Application</h3>
+              <span class="entry-date">Aug 2025 - Nov 2025</span>
+            </div>
+            <p class="answer">
+              A Python backend, built by a team of five, for an analytics and
+              visualisation tool for CPR Kids. It surfaces social media
+              performance, advertisement metrics and bookings.
             </p>
-            <br />
-            <p>
-              The ability to engage with a creative, innovative and proactive
-              environment (3.3) During my Software Development Internship at
-              GlobalMedics.ai, I worked in a small team of 3 engineers,
-              including me, on two projects. One of my tasks was to design an
-              interactive text editor with ReactJS, and the other was to
-              contribute to the development of an AI chatbot using Microsoft
-              Azure services. I explored different approaches to improve
-              usability and functionality and suggested ideas to improve the
-              product. This experience helped me develop confidence in
-              contributing ideas within an innovative development environment.
+            <div class="chips">
+              <span class="chip">Python</span>
+              <span class="chip">FastAPI</span>
+              <span class="chip">MongoDB</span>
+            </div>
+          </article>
+
+          <article class="panel">
+            <div class="entry-head">
+              <h3>Customer Churn Prediction Model</h3>
+              <span class="entry-date">Sep 2025 - Nov 2025</span>
+            </div>
+            <p class="answer">
+              An artificial neural network predicting customer churn from 90 days
+              of anonymised telco usage data, with feature engineering,
+              preprocessing and model evaluation.
             </p>
-            <br />
-            <p>
-              Demonstrated ability to use and manage information (3.4) In my
-              current role, I regularly use SQL queries and reporting tools to
-              support data-driven decision-making. I assist with reporting tasks
-              and dashboard support in IBM Cognos Analytics, helping teams
-              interpret operational data more effectively. By organising and
-              analysing business data, I help departments gain clearer insights
-              into their workflows and identify areas for improvement.
+            <div class="chips">
+              <span class="chip">TensorFlow 2.0</span>
+              <span class="chip">Keras</span>
+              <span class="chip">pandas</span>
+            </div>
+          </article>
+
+          <article class="panel">
+            <div class="entry-head">
+              <h3>Change Management System</h3>
+              <span class="entry-date">Jul 2025 - Aug 2025</span>
+            </div>
+            <p class="answer">
+              A company-wide change management system for Waco Kwikform with
+              dynamic stakeholder approvals, used by 6 departments to track,
+              review and approve or reject operational changes.
             </p>
-            <br />
-            <p>
-              The ability to manage your own performance in a professional
-              environment (3.5) Working in a professional IT support role
-              requires me to remain disciplined and highly organised to meet
-              business demands. I am tasked with managing a constant flow of
-              support tickets while ensuring that all issues are resolved within
-              our established service level agreements. I prioritise my workload
-              based on the urgency of the technical issue and keep users
-              informed of my progress until a resolution is reached. A key
-              result of this self-management was my successful development of a
-              change management system using Power Automate and SharePoint,
-              which is now utilised by six departments to track operational
-              changes.
+            <div class="chips">
+              <span class="chip">Power Automate</span>
+              <span class="chip">SharePoint</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="education" class="section">
+        <div class="section-header">
+          <p class="eyebrow">Academics</p>
+          <h2>Education &amp; Certifications</h2>
+        </div>
+        <div class="panel-grid">
+          <article class="panel">
+            <p class="meta">Degree</p>
+            <h3>Bachelor of Engineering (Honours), Software</h3>
+            <p class="answer">
+              University of Technology Sydney (UTS) · Aug 2023 - Jun 2027
             </p>
-            <br />
-            <p>
-              A demonstrated ability to work as part of a team and to show
-              leadership when required (3.6) For a project at UTS, I
-              collaborated with a team of five software engineering students to
-              build a backend system for CPR Kids. My role was to develop the
-              backend in Python for a data analytics application that tracked
-              social media performance and advertisement metrics. I coordinated
-              with my teammates to ensure our individual components integrated
-              seamlessly and helped others when they faced any difficulties. We
-              successfully delivered a functional application on time,
-              demonstrating our ability to meet client requirements through
-              effective teamwork.
-            </p>
-            <br />
-            <p>
-              If you decide to move ahead with my application, please contact me
-              on my mobile at 0488 532 852 or through my email at
-              manraj.singh1907@gmail.com to discuss how I can contribute to the
-              Industrus Engineering team. I look forward to the possibility of
-              an interview and have attached my resume for your consideration.
-            </p>
-            <br />
-            <p>Best regards,</p>
-            <p>Manraj Singh</p>
-          </div>
-        </article>
+            <ul class="list">
+              <li>
+                <strong>Distinction average:</strong> WAM 81.5, GPA 6.17/7, 11
+                High Distinctions. Sub-major in Data Analytics.
+              </li>
+              <li>
+                <strong>Selected results:</strong> Data Structures and
+                Algorithms (95), Software Development (95), Deep Learning and
+                CNNs (93), Network Fundamentals (92), Software Architecture (90),
+                Machine Learning (86).
+              </li>
+            </ul>
+          </article>
+
+          <article class="panel">
+            <p class="meta">Certification</p>
+            <h3>Deloitte Australia Data Analytics Job Simulation</h3>
+            <p class="answer">Forage · Jun 2025</p>
+            <ul class="list">
+              <li>
+                Data analysis and dashboard creation in Tableau and Excel to
+                investigate data patterns, classify unstructured data and draw
+                business conclusions.
+              </li>
+            </ul>
+          </article>
+        </div>
       </section>
 
       <section id="contact" class="section">
         <div class="section-header">
-          <p class="eyebrow">Section 5</p>
-          <div class="section-header__top">
-            <h2>Contact</h2>
-            <a
-              class="btn btn--secondary btn--small section-download"
-              href="./assets/Manraj%20Singh_UTS_Software%20Engineering.pdf"
-              target="_blank"
-              rel="noopener"
-              >Download Resume PDF</a
-            >
-          </div>
+          <p class="eyebrow">Get in touch</p>
+          <h2>Contact</h2>
         </div>
 
         <div class="contact-grid">
@@ -642,12 +467,7 @@
             <h3>Email</h3>
             <p>
               <a href="mailto:manraj.singh1907@gmail.com"
-                >Personal: manraj.singh1907@gmail.com</a
-              >
-            </p>
-            <p>
-              <a href="mailto:Manraj.Singh@student.uts.edu.au"
-                >University: Manraj.Singh@student.uts.edu.au</a
+                >manraj.singh1907@gmail.com</a
               >
             </p>
           </article>
@@ -691,7 +511,7 @@
 
     <footer>
       <div class="footer-row">
-        <p>Manraj Singh ePortfolio</p>
+        <p>Manraj Singh</p>
         <p>Copyright &#169; 2026 Manraj Singh. All Rights Reserved.</p>
       </div>
     </footer>

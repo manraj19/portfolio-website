@@ -23,14 +23,8 @@
 
   .hero__facts,
   .panel-grid,
-  .reflection-grid,
-  .star-grid,
   .contact-grid {
     grid-template-columns: 1fr;
-  }
-
-  .full-width {
-    grid-column: auto;
   }
 }
 
@@ -67,22 +61,15 @@
     width: 100%;
   }
 
-  .hero__actions,
-  .resume-footer {
+  .hero__actions {
     width: 100%;
   }
 
-  .hero__actions .btn,
-  .resume-footer .btn {
+  .hero__actions .btn {
     width: 100%;
-  }
-
-  .section-download {
-    width: auto !important;
   }
 
   .panel,
-  .card,
   .fact-card {
     padding: 1.1rem;
   }
