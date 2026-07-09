@@ -13,18 +13,31 @@
     padding-top: 1.5rem;
   }
 
-  .hero__content h1 {
-    max-width: 100%;
+  .hero__media {
+    justify-items: start;
   }
 
   .hero__image {
-    width: min(100%, 280px);
+    width: min(100%, 200px);
   }
 
-  .hero__facts,
-  .panel-grid,
-  .contact-grid {
+  .hero__facts {
     grid-template-columns: 1fr;
+  }
+
+  .panel-grid,
+  .edu-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bento {
+    grid-template-columns: 1fr;
+  }
+
+  .tile,
+  .tile--nooklet,
+  .tile--nooklet + .tile {
+    grid-column: auto;
   }
 }
 
@@ -42,39 +55,72 @@
   }
 
   .section {
-    padding: 2.4rem 0;
+    padding: 2.6rem 0;
   }
 
   .hero__content h1 {
-    font-size: clamp(2.2rem, 11vw, 3rem);
-  }
-
-  .hero-subtitle {
-    font-size: 1rem;
+    font-size: clamp(2.8rem, 15vw, 4rem);
   }
 
   .lead {
     font-size: 0.98rem;
   }
 
+  .prompt {
+    font-size: 0.78rem;
+  }
+
   .btn {
     width: 100%;
   }
 
-  .hero__actions {
-    width: 100%;
+  .btn--small {
+    width: auto;
   }
 
+  .hero__actions,
   .hero__actions .btn {
     width: 100%;
   }
 
+  .marquee {
+    margin: 0.5rem -1rem 0;
+  }
+
   .panel,
+  .tile,
   .fact-card {
     padding: 1.1rem;
   }
 
+  .entry {
+    padding: 0 1.1rem;
+  }
+
+  .timeline {
+    padding-left: 1.6rem;
+  }
+
+  .entry::before {
+    left: -1.6rem;
+  }
+
+  .ttt__board {
+    grid-template-columns: repeat(3, 48px);
+  }
+
+  .ttt__cell {
+    width: 48px;
+    height: 48px;
+    font-size: 1.3rem;
+  }
+
+  .copy-email {
+    width: 100%;
+    font-size: 0.8rem;
+  }
+
   .footer-row {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
   }
 }

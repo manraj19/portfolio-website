@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="no-js">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,17 +9,28 @@
       content="Manraj Singh is a Sydney-based software engineer who builds full-stack applications and trains machine learning models. Software Engineering (Honours) student at UTS."
     />
     <meta name="theme-color" content="#234c63" />
+    <meta property="og:title" content="Manraj Singh | Software Engineer" />
+    <meta
+      property="og:description"
+      content="Sydney-based software engineer. Full-stack apps, machine learning models, and a Discord bot with 1,600+ users."
+    />
+    <meta property="og:type" content="website" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23234c63'/%3E%3Ctext x='32' y='43' font-family='Arial,sans-serif' font-size='26' font-weight='800' fill='%23f6f2ea' text-anchor='middle'%3EMS%3C/text%3E%3C/svg%3E"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=JetBrains+Mono:wght@400;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
-    <a class="skip-link" href="#home">Skip to content</a>
+    <a class="skip-link" href="#about">Skip to content</a>
+    <div class="progress" aria-hidden="true"></div>
 
     <header>
       <nav id="desktop-nav" class="nav">
@@ -29,6 +40,7 @@
           <li><a href="#skills">Skills</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -51,6 +63,7 @@
             <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
             <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
             <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#education" onclick="toggleMenu()">Education</a></li>
             <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
           </ul>
         </div>
@@ -58,43 +71,44 @@
     </header>
 
     <main>
-      <section id="home" class="section hero">
-        <div class="hero__media">
-          <img
-            src="./assets/profile-pic.png"
-            alt="Portrait of Manraj Singh"
-            class="hero__image"
-          />
-        </div>
-        <div class="hero__content" id="about">
-          <p class="eyebrow">Software Engineer · Sydney, Australia</p>
-          <h1>Manraj Singh</h1>
+      <section id="about" class="section hero">
+        <div class="hero__content">
+          <p class="eyebrow">// software engineer · sydney, australia</p>
+          <h1>Manraj<br />Singh</h1>
           <p class="hero-subtitle">
-            Full-stack development &amp; machine learning
+            <span id="typed">I build full-stack apps.</span><span
+              class="cursor"
+              aria-hidden="true"
+            ></span>
           </p>
           <p class="lead">
-            I am a Software Engineering (Honours) student at the University of
-            Technology Sydney, graduating June 2027 with a Data Analytics
-            sub-major and a Distinction average. I build full-stack
-            applications with Next.js, TypeScript and FastAPI, and train machine
-            learning models with TensorFlow and Keras.
+            I am a Software Engineering (Honours) student at UTS, graduating
+            June 2027 with a Data Analytics sub-major and a Distinction
+            average. I build full-stack apps with Next.js, TypeScript and
+            FastAPI, and train models with TensorFlow and Keras.
           </p>
           <p class="lead">
-            My industry experience spans software development, IT systems
-            analysis and API documentation. I care most about backend systems,
-            clean data pipelines and shipping products people actually use.
-            Available for 2026 and 2027 internship and graduate roles.
+            I care most about backend systems, clean data pipelines and
+            shipping products people actually use.
+          </p>
+          <p class="prompt" aria-label="Open to 2026 and 2027 internship and graduate roles">
+            <span class="prompt__user">manraj@sydney</span>:~$ status
+            <span class="prompt__out">open to 2026/27 internships + grad roles</span>
           </p>
           <div class="hero__actions">
             <a
-              class="btn btn--primary"
+              class="btn btn--primary magnet"
               href="./assets/Manraj_Singh_Resume.pdf"
               target="_blank"
               rel="noopener"
               >Download Resume</a
             >
-            <a class="btn btn--secondary" href="#projects">View Projects</a>
-            <a class="btn btn--secondary" href="#contact">Get in Touch</a>
+            <a class="btn btn--secondary magnet" href="#projects"
+              >View Projects</a
+            >
+            <a class="btn btn--secondary magnet" href="#contact"
+              >Get in Touch</a
+            >
           </div>
           <div class="social-links" aria-label="Social links">
             <a
@@ -118,104 +132,132 @@
               GitHub
             </a>
           </div>
+        </div>
+        <div class="hero__media">
+          <img
+            src="./assets/profile-pic.png"
+            alt="Portrait of Manraj Singh"
+            class="hero__image"
+            fetchpriority="high"
+          />
           <div class="hero__facts">
             <div class="fact-card">
-              <h3>WAM 81.5</h3>
-              <p>Distinction average, 11 High Distinctions</p>
+              <h3><span data-count="81.5" data-decimals="1">0.0</span></h3>
+              <p>WAM, Distinction average, 11 High Distinctions</p>
             </div>
             <div class="fact-card">
-              <h3>1,600+</h3>
-              <p>Users on my Discord bot across nearly 900 servers</p>
+              <h3><span data-count="1600" data-suffix="+">0</span></h3>
+              <p>Users on my Discord bot across over 900 servers</p>
             </div>
             <div class="fact-card">
-              <h3>Jun 2027</h3>
-              <p>Graduating, B.E. (Honours) Software</p>
+              <h3><span data-count="2027" data-plain>0</span></h3>
+              <p>Graduating June, B.E. (Honours) Software</p>
             </div>
           </div>
         </div>
       </section>
 
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span class="marquee__list">
+            Python · TypeScript · Next.js · React · FastAPI · TensorFlow ·
+            Keras · SQL · PostgreSQL · MongoDB · Kotlin · Azure · Vercel ·
+            DigitalOcean · pandas · Scikit-learn · Prisma · Supabase ·
+            IBM Cognos · Power Automate ·&nbsp;
+          </span>
+          <span class="marquee__list">
+            Python · TypeScript · Next.js · React · FastAPI · TensorFlow ·
+            Keras · SQL · PostgreSQL · MongoDB · Kotlin · Azure · Vercel ·
+            DigitalOcean · pandas · Scikit-learn · Prisma · Supabase ·
+            IBM Cognos · Power Automate ·&nbsp;
+          </span>
+        </div>
+      </div>
+
       <section id="skills" class="section">
-        <div class="section-header">
-          <p class="eyebrow">Toolbox</p>
+        <div class="section-header reveal">
+          <p class="eyebrow">// toolbox</p>
           <h2>Skills</h2>
+          <p class="section-note">
+            Click a skill to see where I have used it.
+          </p>
         </div>
         <div class="panel-grid">
-          <article class="panel">
+          <article class="panel reveal">
             <p class="meta">Languages</p>
             <div class="chips">
-              <span class="chip">Python</span>
-              <span class="chip">TypeScript</span>
-              <span class="chip">JavaScript</span>
-              <span class="chip">SQL</span>
-              <span class="chip">C++</span>
-              <span class="chip">Java</span>
-              <span class="chip">Kotlin</span>
+              <button class="chip" data-skill="python">Python</button>
+              <button class="chip" data-skill="typescript">TypeScript</button>
+              <button class="chip" data-skill="javascript">JavaScript</button>
+              <button class="chip" data-skill="sql">SQL</button>
+              <button class="chip" data-skill="cpp">C++</button>
+              <button class="chip" data-skill="java">Java</button>
+              <button class="chip" data-skill="kotlin">Kotlin</button>
             </div>
           </article>
 
-          <article class="panel">
+          <article class="panel reveal">
             <p class="meta">Frameworks &amp; Libraries</p>
             <div class="chips">
-              <span class="chip">Next.js</span>
-              <span class="chip">React</span>
-              <span class="chip">Node.js</span>
-              <span class="chip">FastAPI</span>
-              <span class="chip">Jetpack Compose</span>
-              <span class="chip">TensorFlow</span>
-              <span class="chip">Keras</span>
+              <button class="chip" data-skill="nextjs">Next.js</button>
+              <button class="chip" data-skill="react">React</button>
+              <button class="chip" data-skill="nodejs">Node.js</button>
+              <button class="chip" data-skill="fastapi">FastAPI</button>
+              <button class="chip" data-skill="compose">Jetpack Compose</button>
+              <button class="chip" data-skill="tensorflow">TensorFlow</button>
+              <button class="chip" data-skill="keras">Keras</button>
             </div>
           </article>
 
-          <article class="panel">
+          <article class="panel reveal">
             <p class="meta">Data &amp; Machine Learning</p>
             <div class="chips">
-              <span class="chip">pandas</span>
-              <span class="chip">NumPy</span>
-              <span class="chip">Scikit-learn</span>
-              <span class="chip">PostgreSQL</span>
-              <span class="chip">MongoDB</span>
-              <span class="chip">Prisma</span>
-              <span class="chip">Supabase</span>
-              <span class="chip">IBM Cognos</span>
-              <span class="chip">Tableau</span>
-              <span class="chip">Power BI</span>
-              <span class="chip">KNIME</span>
+              <button class="chip" data-skill="pandas">pandas</button>
+              <button class="chip" data-skill="numpy">NumPy</button>
+              <button class="chip" data-skill="sklearn">Scikit-learn</button>
+              <button class="chip" data-skill="postgresql">PostgreSQL</button>
+              <button class="chip" data-skill="mongodb">MongoDB</button>
+              <button class="chip" data-skill="prisma">Prisma</button>
+              <button class="chip" data-skill="supabase">Supabase</button>
+              <button class="chip" data-skill="cognos">IBM Cognos</button>
+              <button class="chip" data-skill="tableau">Tableau</button>
+              <button class="chip" data-skill="powerbi">Power BI</button>
+              <button class="chip" data-skill="knime">KNIME</button>
             </div>
           </article>
 
-          <article class="panel">
+          <article class="panel reveal">
             <p class="meta">Tools &amp; Platforms</p>
             <div class="chips">
-              <span class="chip">Git / GitHub</span>
-              <span class="chip">REST APIs</span>
-              <span class="chip">Microsoft Azure</span>
-              <span class="chip">Vercel</span>
-              <span class="chip">DigitalOcean</span>
-              <span class="chip">Power Automate</span>
-              <span class="chip">SharePoint</span>
-              <span class="chip">VS Code</span>
+              <button class="chip" data-skill="git">Git / GitHub</button>
+              <button class="chip" data-skill="restapis">REST APIs</button>
+              <button class="chip" data-skill="azure">Microsoft Azure</button>
+              <button class="chip" data-skill="vercel">Vercel</button>
+              <button class="chip" data-skill="digitalocean">DigitalOcean</button>
+              <button class="chip" data-skill="powerautomate">Power Automate</button>
+              <button class="chip" data-skill="sharepoint">SharePoint</button>
+              <button class="chip" data-skill="vscode">VS Code</button>
             </div>
           </article>
         </div>
       </section>
 
       <section id="experience" class="section">
-        <div class="section-header">
-          <p class="eyebrow">Where I've worked</p>
+        <div class="section-header reveal">
+          <p class="eyebrow">// where i've worked</p>
           <h2>Experience</h2>
         </div>
-        <div class="stack">
-          <article class="panel entry">
-            <div class="entry-head">
-              <div>
+        <div class="timeline">
+          <details class="entry reveal" open data-tags="restapis">
+            <summary>
+              <span class="entry-title">
                 <h3>Software Engineer Intern</h3>
-                <p class="entry-company">
-                  Jio Platform Limited, Enterprise Self-Care Team
-                </p>
-              </div>
+                <span class="entry-company"
+                  >Jio Platform Limited, Enterprise Self-Care Team</span
+                >
+              </span>
               <span class="entry-date">Jun 2026 - Jul 2026</span>
-            </div>
+            </summary>
             <ul class="list">
               <li>
                 Documented 5 end-to-end API flows on the JioBusiness portal for
@@ -229,16 +271,16 @@
                 HTTP 200 responses.
               </li>
             </ul>
-          </article>
+          </details>
 
-          <article class="panel entry">
-            <div class="entry-head">
-              <div>
+          <details class="entry reveal" data-tags="sql cognos">
+            <summary>
+              <span class="entry-title">
                 <h3>Junior IT Support and Systems Analyst</h3>
-                <p class="entry-company">Waco Kwikform Group</p>
-              </div>
+                <span class="entry-company">Waco Kwikform Group</span>
+              </span>
               <span class="entry-date">Oct 2025 - Apr 2026</span>
-            </div>
+            </summary>
             <ul class="list">
               <li>
                 Provided Level 1 support across business systems: resolved
@@ -251,16 +293,16 @@
                 documentation.
               </li>
             </ul>
-          </article>
+          </details>
 
-          <article class="panel entry">
-            <div class="entry-head">
-              <div>
+          <details class="entry reveal" data-tags="sql">
+            <summary>
+              <span class="entry-title">
                 <h3>IT Business Analyst Intern</h3>
-                <p class="entry-company">Waco Kwikform Group</p>
-              </div>
+                <span class="entry-company">Waco Kwikform Group</span>
+              </span>
               <span class="entry-date">Apr 2025 - Sep 2025</span>
-            </div>
+            </summary>
             <ul class="list">
               <li>
                 Delivered process improvements on three major projects across
@@ -272,16 +314,16 @@
                 departments to shape process-optimisation work.
               </li>
             </ul>
-          </article>
+          </details>
 
-          <article class="panel entry">
-            <div class="entry-head">
-              <div>
+          <details class="entry reveal" data-tags="react javascript azure">
+            <summary>
+              <span class="entry-title">
                 <h3>Software Development Intern</h3>
-                <p class="entry-company">GlobalMedics.ai</p>
-              </div>
+                <span class="entry-company">GlobalMedics.ai</span>
+              </span>
               <span class="entry-date">Jun 2024 - Sep 2024</span>
-            </div>
+            </summary>
             <ul class="list">
               <li>
                 Built an interactive React text editor and a customer-facing AI
@@ -289,77 +331,178 @@
                 two projects.
               </li>
             </ul>
-          </article>
+          </details>
         </div>
       </section>
 
       <section id="projects" class="section">
-        <div class="section-header">
-          <p class="eyebrow">Selected work</p>
+        <div class="section-header reveal">
+          <p class="eyebrow">// selected work</p>
           <h2>Projects</h2>
         </div>
-        <div class="panel-grid">
-          <article class="panel">
-            <div class="entry-head">
+        <div class="bento">
+          <article
+            class="tile tile--nooklet reveal"
+            data-tags="nextjs typescript react nodejs prisma supabase postgresql vercel"
+          >
+            <div class="browser" aria-hidden="true">
+              <div class="browser__bar">
+                <span class="browser__dot"></span>
+                <span class="browser__dot"></span>
+                <span class="browser__dot"></span>
+                <span class="browser__url">nooklets.com</span>
+              </div>
+              <div class="browser__body">
+                <div class="sk sk--hero"></div>
+                <div class="sk-row">
+                  <div class="sk sk--card"></div>
+                  <div class="sk sk--card"></div>
+                  <div class="sk sk--card"></div>
+                </div>
+                <div class="sk sk--line"></div>
+                <div class="sk sk--line sk--short"></div>
+              </div>
+            </div>
+            <div class="tile__head">
               <h3>Nooklet</h3>
               <span class="entry-date">May 2026 - Present</span>
             </div>
             <p class="answer">
-              A full-stack social platform to log and review media across
-              several categories, with cross-category recommendations and
-              external content providers unified behind a single, deduplicated
-              search.
+              A live social platform to log and review media across several
+              categories, with cross-category recommendations and external
+              content providers unified behind a single, deduplicated search.
             </p>
-            <div class="chips">
-              <span class="chip">Next.js</span>
-              <span class="chip">TypeScript</span>
-              <span class="chip">Tailwind CSS</span>
-              <span class="chip">Prisma</span>
-              <span class="chip">Supabase</span>
-              <span class="chip">PostgreSQL</span>
+            <div class="tile__links">
+              <a
+                class="btn btn--secondary btn--small"
+                href="https://www.nooklets.com/"
+                target="_blank"
+                rel="noopener"
+                >Visit nooklets.com</a
+              >
             </div>
           </article>
 
-          <article class="panel">
-            <div class="entry-head">
-              <h3>MiniGames Discord Bot</h3>
-              <span class="entry-date">Sep 2024 - Present</span>
+          <article
+            class="tile reveal"
+            data-tags="kotlin compose fastapi tensorflow keras"
+          >
+            <div class="gesture-demo" aria-hidden="true">
+              <span class="gesture-emoji">✋</span>
+              <span class="gesture-label">hover to detect</span>
             </div>
-            <p class="answer">
-              A Discord bot used in close to 900 servers by over 1,600
-              registered users, running games including Tic-Tac-Toe, Connect 4,
-              Flag Guesser and more.
-            </p>
-            <div class="chips">
-              <span class="chip">Python</span>
-              <span class="chip">discord.py</span>
-              <span class="chip">DigitalOcean</span>
-            </div>
-          </article>
-
-          <article class="panel">
-            <div class="entry-head">
-              <h3>Android Hand Gesture Recognition</h3>
+            <div class="tile__head">
+              <h3>Hand Gesture Recognition</h3>
               <span class="entry-date">Mar 2026 - Jun 2026</span>
             </div>
             <p class="answer">
               A real-time gesture-recognition Android app backed by two FastAPI
-              models: a MobileNetV2 transfer-learning model and a CustomCNN built
-              from scratch, both trained on HaGRID and A/B tested in-app. Built
-              by a team of three.
+              models: a MobileNetV2 transfer-learning model and a CustomCNN
+              built from scratch, both trained on HaGRID and A/B tested in-app.
+              Built by a team of three.
             </p>
-            <div class="chips">
-              <span class="chip">Kotlin</span>
-              <span class="chip">Jetpack Compose</span>
-              <span class="chip">CameraX</span>
-              <span class="chip">FastAPI</span>
-              <span class="chip">MobileNetV2</span>
-              <span class="chip">CNN</span>
+            <div class="tile__links">
+              <a
+                class="btn btn--secondary btn--small"
+                href="https://github.com/manraj19/android-hand-gesture-recognition"
+                target="_blank"
+                rel="noopener"
+                >GitHub</a
+              >
             </div>
           </article>
 
-          <article class="panel">
-            <div class="entry-head">
+          <article
+            class="tile tile--game reveal"
+            data-tags="python digitalocean"
+          >
+            <div class="tile__head">
+              <h3>MiniGames Discord Bot</h3>
+              <span class="entry-date">Sep 2024 - Present</span>
+            </div>
+            <p class="answer">
+              A Discord bot used in more than 900 servers by over 1,600
+              registered users, running Tic-Tac-Toe, Connect 4, Flag Guesser
+              and more.
+            </p>
+            <div class="ttt">
+              <p class="ttt__status" role="status">
+                Your move. You are X.
+              </p>
+              <div class="ttt__board">
+                <button class="ttt__cell" data-cell="0" aria-label="Row 1, column 1, empty"></button>
+                <button class="ttt__cell" data-cell="1" aria-label="Row 1, column 2, empty"></button>
+                <button class="ttt__cell" data-cell="2" aria-label="Row 1, column 3, empty"></button>
+                <button class="ttt__cell" data-cell="3" aria-label="Row 2, column 1, empty"></button>
+                <button class="ttt__cell" data-cell="4" aria-label="Row 2, column 2, empty"></button>
+                <button class="ttt__cell" data-cell="5" aria-label="Row 2, column 3, empty"></button>
+                <button class="ttt__cell" data-cell="6" aria-label="Row 3, column 1, empty"></button>
+                <button class="ttt__cell" data-cell="7" aria-label="Row 3, column 2, empty"></button>
+                <button class="ttt__cell" data-cell="8" aria-label="Row 3, column 3, empty"></button>
+              </div>
+              <div class="ttt__foot">
+                <span class="ttt__note">You can play with real people on the bot.</span>
+                <button class="btn btn--secondary btn--small ttt__reset" type="button">
+                  Restart
+                </button>
+              </div>
+            </div>
+            <div class="tile__links">
+              <a
+                class="btn btn--secondary btn--small"
+                href="https://github.com/manraj19/discordpyminigamesbot"
+                target="_blank"
+                rel="noopener"
+                >GitHub</a
+              >
+              <a
+                class="btn btn--secondary btn--small"
+                href="https://top.gg/bot/1285070559087951974"
+                target="_blank"
+                rel="noopener"
+                >top.gg</a
+              >
+            </div>
+          </article>
+
+          <article
+            class="tile reveal"
+            data-tags="tensorflow keras python pandas numpy sklearn"
+          >
+            <svg
+              class="sparkline"
+              viewBox="0 0 120 44"
+              aria-hidden="true"
+              preserveAspectRatio="none"
+            >
+              <path
+                class="sparkline__path"
+                d="M2,6 C14,7 20,16 32,20 C44,24 50,23 62,28 C74,33 88,34 118,37"
+              />
+            </svg>
+            <p class="sparkline__label" aria-hidden="true">val_loss ↓</p>
+            <div class="tile__head">
+              <h3>Customer Churn Prediction</h3>
+              <span class="entry-date">Sep 2025 - Nov 2025</span>
+            </div>
+            <p class="answer">
+              An artificial neural network predicting customer churn from 90
+              days of anonymised telco usage data, with feature engineering,
+              preprocessing and model evaluation.
+            </p>
+            <div class="tile__links">
+              <a
+                class="btn btn--secondary btn--small"
+                href="https://github.com/manraj19/customer-churn-DNN"
+                target="_blank"
+                rel="noopener"
+                >GitHub</a
+              >
+            </div>
+          </article>
+
+          <article class="tile reveal" data-tags="python fastapi mongodb">
+            <div class="tile__head">
               <h3>Data Analytics Application</h3>
               <span class="entry-date">Aug 2025 - Nov 2025</span>
             </div>
@@ -368,32 +511,13 @@
               visualisation tool for CPR Kids. It surfaces social media
               performance, advertisement metrics and bookings.
             </p>
-            <div class="chips">
-              <span class="chip">Python</span>
-              <span class="chip">FastAPI</span>
-              <span class="chip">MongoDB</span>
+            <div class="tile__links">
+              <span class="badge">Client work, code private</span>
             </div>
           </article>
 
-          <article class="panel">
-            <div class="entry-head">
-              <h3>Customer Churn Prediction Model</h3>
-              <span class="entry-date">Sep 2025 - Nov 2025</span>
-            </div>
-            <p class="answer">
-              An artificial neural network predicting customer churn from 90 days
-              of anonymised telco usage data, with feature engineering,
-              preprocessing and model evaluation.
-            </p>
-            <div class="chips">
-              <span class="chip">TensorFlow 2.0</span>
-              <span class="chip">Keras</span>
-              <span class="chip">pandas</span>
-            </div>
-          </article>
-
-          <article class="panel">
-            <div class="entry-head">
+          <article class="tile reveal" data-tags="powerautomate sharepoint">
+            <div class="tile__head">
               <h3>Change Management System</h3>
               <span class="entry-date">Jul 2025 - Aug 2025</span>
             </div>
@@ -402,41 +526,67 @@
               dynamic stakeholder approvals, used by 6 departments to track,
               review and approve or reject operational changes.
             </p>
-            <div class="chips">
-              <span class="chip">Power Automate</span>
-              <span class="chip">SharePoint</span>
+            <div class="tile__links">
+              <span class="badge">Internal tool</span>
             </div>
           </article>
         </div>
       </section>
 
       <section id="education" class="section">
-        <div class="section-header">
-          <p class="eyebrow">Academics</p>
-          <h2>Education &amp; Certifications</h2>
+        <div class="section-header reveal">
+          <p class="eyebrow">// academics</p>
+          <h2>Education</h2>
         </div>
-        <div class="panel-grid">
-          <article class="panel">
-            <p class="meta">Degree</p>
-            <h3>Bachelor of Engineering (Honours), Software</h3>
-            <p class="answer">
-              University of Technology Sydney (UTS) · Aug 2023 - Jun 2027
+        <div class="edu-grid">
+          <article class="receipt reveal">
+            <p class="receipt__title">UTS * SELECTED RESULTS</p>
+            <p class="receipt__sub">
+              B.E. (Honours), Software Engineering<br />Aug 2023 - Jun 2027 ·
+              Sub-major in Data Analytics
             </p>
-            <ul class="list">
-              <li>
-                <strong>Distinction average:</strong> WAM 81.5, GPA 6.17/7, 11
-                High Distinctions. Sub-major in Data Analytics.
-              </li>
-              <li>
-                <strong>Selected results:</strong> Data Structures and
-                Algorithms (95), Software Development (95), Deep Learning and
-                CNNs (93), Network Fundamentals (92), Software Architecture (90),
-                Machine Learning (86).
-              </li>
-            </ul>
+            <div class="receipt__rows">
+              <p class="r-row">
+                <span>DATA STRUCTURES &amp; ALGORITHMS</span>
+                <span class="r-dots"></span><span>95</span>
+              </p>
+              <p class="r-row">
+                <span>SOFTWARE DEVELOPMENT</span>
+                <span class="r-dots"></span><span>95</span>
+              </p>
+              <p class="r-row">
+                <span>DEEP LEARNING &amp; CNNS</span>
+                <span class="r-dots"></span><span>93</span>
+              </p>
+              <p class="r-row">
+                <span>NETWORK FUNDAMENTALS</span>
+                <span class="r-dots"></span><span>92</span>
+              </p>
+              <p class="r-row">
+                <span>SOFTWARE ARCHITECTURE</span>
+                <span class="r-dots"></span><span>90</span>
+              </p>
+              <p class="r-row">
+                <span>MACHINE LEARNING</span>
+                <span class="r-dots"></span><span>86</span>
+              </p>
+            </div>
+            <div class="receipt__total">
+              <p class="r-row">
+                <span>WAM</span><span class="r-dots"></span><span>81.5</span>
+              </p>
+              <p class="r-row">
+                <span>GPA</span><span class="r-dots"></span><span>6.17/7</span>
+              </p>
+              <p class="r-row">
+                <span>HIGH DISTINCTIONS</span>
+                <span class="r-dots"></span><span>11</span>
+              </p>
+            </div>
+            <p class="receipt__foot">*** DISTINCTION AVERAGE ***</p>
           </article>
 
-          <article class="panel">
+          <article class="panel cert reveal" data-tags="tableau">
             <p class="meta">Certification</p>
             <h3>Deloitte Australia Data Analytics Job Simulation</h3>
             <p class="answer">Forage · Jun 2025</p>
@@ -451,67 +601,51 @@
         </div>
       </section>
 
-      <section id="contact" class="section">
-        <div class="section-header">
-          <p class="eyebrow">Get in touch</p>
-          <h2>Contact</h2>
+      <section id="contact" class="section contact">
+        <div class="section-header reveal">
+          <p class="eyebrow">// get in touch</p>
+          <h2>Let's build something.</h2>
+          <p class="section-note">
+            Recruiting for 2026/27? Building something fun? My inbox is open.
+          </p>
         </div>
-
-        <div class="contact-grid">
-          <article class="panel contact-card">
-            <img
-              src="./assets/email.png"
-              alt="Email icon"
-              class="icon contact-icon"
-            />
-            <h3>Email</h3>
-            <p>
-              <a href="mailto:manraj.singh1907@gmail.com"
-                >manraj.singh1907@gmail.com</a
-              >
-            </p>
-          </article>
-
-          <article class="panel contact-card">
+        <div class="contact-row reveal">
+          <button class="btn btn--primary copy-email" type="button">
+            <span class="copy-email__text">manraj.singh1907@gmail.com</span>
+            <span class="copy-email__hint">copy</span>
+          </button>
+          <span class="copy-email__status" role="status"></span>
+        </div>
+        <div class="social-links social-links--contact reveal">
+          <a
+            href="https://www.linkedin.com/in/manrajsingh19/"
+            target="_blank"
+            rel="noopener"
+          >
             <img
               src="./assets/linkedin.png"
               alt="LinkedIn icon"
-              class="icon contact-icon"
+              class="icon"
+              loading="lazy"
             />
-            <h3>LinkedIn</h3>
-            <p>
-              <a
-                href="https://www.linkedin.com/in/manrajsingh19/"
-                target="_blank"
-                rel="noopener"
-                >linkedin.com/in/manrajsingh19</a
-              >
-            </p>
-          </article>
-
-          <article class="panel contact-card">
+            linkedin.com/in/manrajsingh19
+          </a>
+          <a href="https://github.com/manraj19" target="_blank" rel="noopener">
             <img
               src="./assets/github.png"
               alt="GitHub icon"
-              class="icon contact-icon"
+              class="icon"
+              loading="lazy"
             />
-            <h3>GitHub</h3>
-            <p>
-              <a
-                href="https://github.com/manraj19"
-                target="_blank"
-                rel="noopener"
-                >github.com/manraj19</a
-              >
-            </p>
-          </article>
+            github.com/manraj19
+          </a>
         </div>
       </section>
     </main>
 
     <footer>
       <div class="footer-row">
-        <p>Manraj Singh</p>
+        <p>Built with vanilla HTML, CSS and JS. No frameworks were harmed.</p>
         <p>Copyright &#169; 2026 Manraj Singh. All Rights Reserved.</p>
       </div>
     </footer>
